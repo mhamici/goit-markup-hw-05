@@ -628,8 +628,9 @@ border: none;
   }
 
 .contact-form-fields-wrapper{
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
+
 .contact-form-description{
 font-weight: 500;
 font-size: 16px;
@@ -675,8 +676,8 @@ transform: translateY(-50%);
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-form-input-wrapper{
-  position: relative;
-  margin-bottom: 8px;
+position: relative;
+margin-bottom: 16px;
 }
 .contact-form-text-message{
   font-size: 12px;
