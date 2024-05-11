@@ -503,6 +503,7 @@ color: #f4f4fd;
 width: 264px;
 height: 40px;
 font-size: 12px;
+line-height: 2;
 border: 1px solid #ffffff;
 border-radius: 4px;
 letter-spacing: 0.04em;
@@ -534,7 +535,7 @@ outline: transparent;
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
@@ -569,8 +570,7 @@ outline: transparent;
 .backdrop.is-open {
   opacity: 1;
   visibility: visible;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: visibility  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal{
 position:absolute;
@@ -605,11 +605,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 
 .modal-close-btn:hover,
 .modal-close-btn:focus{
+  border: none;
   background-color: #404bbf;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn-icon{
 fill: #2E2F42;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn-icon:hover,
 .modal-close-btn-icon:focus{
@@ -619,7 +621,7 @@ border: none;
   }
 
 .contact-form-fields-wrapper{
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
 .contact-form-description{
 font-weight: 500;
@@ -725,7 +727,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 }
 .contact-form-checkbox:checked + .contact-form-checkbox-label .contact-form-own-checkbox{
   background-color: #404bbf;
-  fill: #ffffff;
+  fill: #404bbf;
   border: none;
 }
 
@@ -745,8 +747,11 @@ letter-spacing: 0.04em;
 color: #ffffff;
 cursor: pointer;
 background: #4d5ae5;
+border-radius: 4px;
+padding: 16px 32px;
 border: none;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+margin: 0 auto;
 }
 
 .contact-form-submit:hover,
